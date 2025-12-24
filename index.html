@@ -1,97 +1,21 @@
-
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>PHOENIX TERMINAL OS</title>
     <style>
-        body {
-            background-color: #050505;
-            color: #00ff41;
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            overflow-y: auto; /* اجازه اسکرول کردن */
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJidWpueXp6bmZ4bmZ4bmZ4bmZ4bmZ4bmZ4bmZ4bmZ4bmZ4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ2VudGlmaWVyJmN0PWc/3o7TKSjPInLpWOTWdq/giphy.gif');
-            background-attachment: fixed;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .window {
-            border: 1px solid #00ff41;
-            background: rgba(0, 20, 0, 0.9);
-            box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
-            width: 350px;
-            min-height: 250px;
-            border-radius: 5px;
-            overflow: hidden;
-            animation: fadeIn 1s ease-in;
-        }
-
-        .window-header {
-            background: #00ff41;
-            color: black;
-            padding: 5px 10px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .window-content { padding: 15px; }
-
-        .dragon-frame {
-            width: 100%;
-            height: 200px;
-            border: 1px solid #00ff41;
-            background: url('https://i.pinimg.com/originals/f4/d2/94/f4d294020351368a5c378e932ba815d9.png'); /* عکس اژدها */
-            background-size: cover;
-            background-position: center;
-        }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .stat-bar { background: #111; height: 10px; width: 100%; margin: 10px 0; border: 1px solid #00ff41; }
-        .stat-fill { background: #00ff41; height: 100%; width: 75%; animation: load 2s infinite; }
-        @keyframes load { 0% { width: 10%; } 50% { width: 90%; } 100% { width: 10%; } }
+        body { background: #000; color: #0f0; font-family: monospace; text-align: center; margin: 0; padding: 20px; }
+        .dragon-frame { border: 2px solid #0f0; background: rgba(0,20,0,0.8); border-radius: 15px; overflow: hidden; max-width: 500px; margin: auto; }
+        .header { background: #0f0; color: #000; padding: 10px; font-weight: bold; }
+        img { width: 100%; height: auto; display: block; }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="window">
-        <div class="window-header"><span>DRAGON_EYE.EXE</span><span>[X]</span></div>
-        <div class="window-content">
-            <div class="dragon-frame"></div>
-            <p>> مانیتورینگ اژدهای فینیکس...</p>
-            <div class="stat-bar"><div class="stat-fill"></div></div>
-        </div>
+    <div class="dragon-frame">
+        <div class="header">SYSTEM_PHOENIX_v2.0</div>
+        <img src="Screenshot_2025-04-27-19-18-06-985_com.miui.mediaviewer.png">
+        <div style="padding: 15px;">> اژدهای فینیکس آنلاین است.</div>
     </div>
-
-    <div class="window">
-        <div class="window-header"><span>SYSTEM_INFO</span><span>[X]</span></div>
-        <div class="window-content">
-            <p>> کاربر: PHOENIX</p>
-            <p>> وضعیت: آنلاین (GitHub Cloud)</p>
-            <p>> سرور: پایدار</p>
-            <p style="color: yellow;">> هشدار: سطح انرژی اژدها بالا است!</p>
-        </div>
-    </div>
-
-    <div class="window" style="width: 100%; max-width: 720px;">
-        <div class="window-header"><span>TERMINAL_COMMAND</span><span>[X]</span></div>
-        <div class="window-content">
-            <p>> در حال بارگذاری داده‌های سری...</p>
-            <p>> [####################] 100%</p>
-            <p>> خوش آمدی فینیکس. تمام سیستم‌ها تحت کنترل تو هستند.</p>
-        </div>
-    </div>
-</div>
-
 </body>
 </html>
+
+
